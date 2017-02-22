@@ -35,7 +35,7 @@ public class MyArrayListTest {
       public void testGet() throws Exception {
         MyArrayList arrayList = new MyArrayList();
         //arrayList.add(6,"1");
-        //arrayList.add(5,"2");
+        arrayList.add(5,"2");
         arrayList.add(4,"3");
         arrayList.add(3,"4");
         arrayList.add(2,"5");
@@ -61,8 +61,8 @@ public class MyArrayListTest {
     }
 
     @Test
-    public void testRemove() throws Exception {
-
+    public void testRemove()  {
+         throw new RuntimeException();
     }
 
     @Test

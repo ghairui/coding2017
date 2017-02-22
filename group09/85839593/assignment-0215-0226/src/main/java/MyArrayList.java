@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
@@ -10,8 +11,10 @@ import java.util.List;
  */
 public class MyArrayList  {
     public int size = 0;
-    private Object [] elementData = new Object[6];
+    private Object [] elementData = new Object[5];
     public void add(int index,Object obj){
+        if(index>size() ||index<0)
+            throw new IndexOutOfBoundsException("哎呀我去,不够了.");
         elementData[index]=obj;
         size++;
     }
